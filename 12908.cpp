@@ -11,9 +11,9 @@ int main(){
     	if((sum>k)&&(i>0)){
     		cout<<sum-k<<" "<<i;
     		break;
-		}else{
-			if(i<=0)
-				n+=10;
+	}else{
+		if(i<=0)
+			n+=10;
 		}
 	}
 }
