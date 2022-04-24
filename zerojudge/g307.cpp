@@ -35,4 +35,4 @@ void sort(int *A,int K){
 		}
 		A[j+1]=t;	
 	}
-}
+} 
