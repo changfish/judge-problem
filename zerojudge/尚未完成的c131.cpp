@@ -6,6 +6,7 @@
 using namespace std;
 int v[maxsize],s=0,r=0;//s紀錄第幾個case，r判斷有沒有走訪超過2次的點 
 
+
 void dfs(vector<int> *tree,int current,int *v){	//**記得要判斷是否為空(或嘗試如果為空會不會走訪)
 	for(int i=0;i<tree[current].size();i++){
 		if(v[tree[current][i]]<2){
@@ -32,9 +33,11 @@ int main() {
 		s++;
 		memset(v,0,sizeof(v));
 		vector<int> tree[maxsize];
+		root.push_back(a);						//一開始把左邊的數字(a)加進根的串列 
 		tree[a].push_back(b);
 		while(cin>>a>>b){
 			if(a==0&b==0){
+								//這邊要找根 迴圈 我要睡拉 
 				dfs(tree,,v);	//中間要放root	
 				if(r){
 					cout<<"Case "<<s<<" is not a tree.\n";
@@ -45,8 +48,8 @@ int main() {
 				cleartree(tree);
 				break;
 			}
+			root.push_back(a);
 			tree[a].push_back(b);	
 		}
 	} 
 }
-
