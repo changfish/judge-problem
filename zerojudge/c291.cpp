@@ -31,7 +31,6 @@ int main() {
 		if(B[i]==0)
 			dfs(i,A,B,1);
 	}
-	
 	cout<<sum;
 }
 
