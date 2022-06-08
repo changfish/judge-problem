@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int sum=0;
 
 void dfs(int now,int *A,int *B,int yn){	//yn判斷是走訪(0)還是起頭(1)模式 
