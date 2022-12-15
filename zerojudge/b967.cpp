@@ -48,4 +48,3 @@ int main() {
 		printf("%d\n",max-1);	//記得max要-1才是答案 
    }
 }
-
